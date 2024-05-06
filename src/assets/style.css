@@ -158,3 +158,119 @@ body{
     height: 200px;
     box-shadow: 0px 2px 80px 4px;
 }
+
+.article{
+ display: flex;
+ width: 80%;
+ height: 200px;
+ color: rgb(87, 87, 87);
+}
+.articleText{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ height: 100%;
+ font-family: "roboto", sans-serif;
+
+}
+.containerArticleImage{
+ width: 100%;
+ max-width: 350px;
+ height: 100%;
+}
+.articleImage{
+ width: 100%;
+ height: 100%;
+}
+.articleTitle{
+ font-size: 3.5rem;
+}
+.articleP{
+ padding-left: 5%;
+ padding-top: 25px;
+ font-size: 1.7rem;
+}
+
+/* Estilos del contenido principal */
+.mainContent{
+ display: flex;
+ flex-direction: column;
+ margin-top: 110px;
+ align-items: center;
+}
+
+/* Estilos de las secciones */
+.divSection{
+ display: flex;
+ margin-top: 30px;
+ flex-direction: row;
+ width: 80%;
+ height: 300px;
+ font-family: "roboto", sans-serif;
+}
+.sectionContent{
+ width: 100%;
+ margin-right: 7%;
+ font-size: 3rem;
+ color: rgb(87, 87, 87);
+ box-shadow: black 0 1px 12px 0px;
+ padding: 1%;
+ background-color: #bcdaf5;
+
+}
+.sectionTitle{
+ margin-top: 20px;
+ margin-bottom: 20px;
+}
+.sectionP{
+ font-size: 1.7rem;
+ text-align: justify;
+
+}
+
+/* Estilos del formulario de registro*/
+.asideContent {
+ background-color: #f5f5f5;
+ padding: 20px;
+ border-radius: 5px;
+ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+ margin-top: 20px;
+ width: 60%; 
+ margin: 0 auto; 
+}
+
+.asideContent h4 {
+ margin-top: 0;
+ font-size: 1.7rem;
+}
+
+.asideContent label {
+ font-size: 1.5rem;
+ display: block;
+ margin-bottom: 5px;
+}
+
+.asideContent input[type="text"],
+.asideContent input[type="text"],
+.asideContent input[type="password"] {
+ width: 100%;
+ padding: 10px;
+ margin-bottom: 10px;
+ border: 1px solid #ccc;
+ border-radius: 3px;
+}
+
+.asideContent button {
+ background-color: #67e8f9; 
+ color: white; 
+ padding: 15px 30px; 
+ border: none;
+ border-radius: 5px; 
+ cursor: pointer;
+ font-size: 1.5rem;
+}
+
+.asideContent button:hover {
+ background-color: #1d40af; 
+}
