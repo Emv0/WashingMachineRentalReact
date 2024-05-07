@@ -1,10 +1,6 @@
 
-import React from "react";
-import "../assets/style.css"
-import Nosotros from './pages/Nosotros';
 const Nosotros = () => {
   return(
-        
         
         <div class="mainContent">
             <article class="article">
@@ -44,7 +40,7 @@ const Nosotros = () => {
                             </form> 
                         
                         </div>
-                        
+                         
                         )}
                         export default Nosotros;
                         
