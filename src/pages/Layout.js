@@ -2,6 +2,7 @@ import {Outlet,Link} from "react-router-dom";
 import "../assets/style.css"
 import Footer from "../components/Footer";
 
+
 const Layout = ()=>{
     return<div>
         <header className="header-container">
