@@ -1,215 +1,280 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
 * {
-    font-family: "Nunito", sans-serif;
-		font-style: normal;
-    font-size: 62.5%;
-    margin: 0;
-    padding: 0;
-		box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-:root{
-    --principal-color:#1D40AF;
-    --button-color:#7ce20e;
-    --title-color:#67E8F9;
-    --nav-fonts-color:#ffffff;
-    --page-fonts-color:#000000;
+:root {
+  --principal-color: #1d40af;
+  --button-color: #7ce20e;
+  --title-color: #67e8f9;
+  --nav-fonts-color: #ffffff;
+  --page-fonts-color: #000000;
+  --title-color-richard: #fff;
+  --subtitle-color-richard: #0c03b2;
+  --title-background-richard: #0c03b2;
+  --font-color-richard: #000;
 }
 
-body{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
 }
 
 .header-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    width: 100%;
-    font-weight: bold;
-    height: 90px;
-    background-color: var(--principal-color);
-    box-shadow: 0px 2px 80px 4px;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  font-weight: bold;
+  height: 90px;
+  background-color: var(--principal-color);
+  box-shadow: 0px 2px 80px 4px;
 }
 
 .nav-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 .name {
-    font-size: 3.2rem;
-    text-decoration: none;
-    margin-right: 5%;
-    color: var(--title-color);
+  font-size: 3.2rem;
+  text-decoration: none;
+  margin-right: 5%;
+  color: var(--title-color);
 }
 
 .link-item {
-    color: var(--nav-fonts-color);
-    font-size: 1.8rem;
-    text-decoration: none;
+  color: var(--nav-fonts-color);
+  font-size: 1.8rem;
+  text-decoration: none;
 }
 
-.list-container>ul {
-    list-style: none;
-    display: flex;
+.list-container > ul {
+  list-style: none;
+  display: flex;
 }
 
-.list-container>ul>li {
-    margin-left: 20px;
+.list-container > ul > li {
+  margin-left: 20px;
 }
 
 .btn-container {
-    display: flex;
-    align-items: center;
-    margin-left: 5%;
+  display: flex;
+  align-items: center;
+  margin-left: 5%;
 }
 
 .register-btn {
-    font-size: 1.8rem;
-    padding: 4px;
-    border-radius: 10px;
-    border: none;
-    font-weight: bold;
-    background-color: var(--button-color);
-    box-shadow: 0px 0px 10px 4px var(--page-fonts-color);
-    color: var(--nav-fonts-color);
-    margin-left: 15px;
+  font-size: 1.8rem;
+  padding: 4px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  background-color: var(--button-color);
+  box-shadow: 0px 0px 10px 4px var(--page-fonts-color);
+  color: var(--nav-fonts-color);
+  margin-left: 15px;
 }
 
-.btn-container>h5>a {
-    font-size: 2.0rem;
-    text-decoration: none;
-    color: var(--nav-fonts-color);
+.btn-container > h5 > a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: var(--nav-fonts-color);
 }
 
-.fa-bars{
-    font-size: 4.0rem;
-    font-weight: normal;
-    margin-right: 5%;
-    color: var(--nav-fonts-color);
+.fa-bars {
+  font-size: 4rem;
+  font-weight: normal;
+  margin-right: 5%;
+  color: var(--nav-fonts-color);
 }
 
-.products-section{
-    margin-top: 40px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+.products-section {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-.products-title{
-    font-size: 2.8rem;
+.products-title {
+  font-size: 2.8rem;
 }
 
-.items-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 1250px;
+.items-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 1250px;
 }
 
-.item{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(226, 226, 226);
-    border: 1px white solid;
-    justify-content: center;
-    width: 406px;
-    height: 370px;
-    border-radius: 15px;
-    margin-left: 10px;
-    margin-top: 15px;
-    box-shadow: 0px 0px 30px 3px;
-    padding: 5px;
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(226, 226, 226);
+  border: 1px white solid;
+  justify-content: center;
+  width: 406px;
+  height: 370px;
+  border-radius: 15px;
+  margin-left: 10px;
+  margin-top: 15px;
+  box-shadow: 0px 0px 30px 3px;
+  padding: 5px;
 }
 
-.item-image{
-    margin-bottom: 10px;
-    border-radius: 15px;
+.item-image {
+  margin-bottom: 10px;
+  border-radius: 15px;
 }
 
-.carr-img{
-    border-radius: 10px;
+.carr-img {
+  border-radius: 10px;
 }
 
-.carousel-inner{
-    border-radius: 10px;
-    margin-top: 50px;
-    box-shadow: 0px 0px 10px 2px;
+.carousel-inner {
+  border-radius: 10px;
+  margin-top: 50px;
+  box-shadow: 0px 0px 10px 2px;
 }
 
-.product-name{
-    font-size: 1.8rem;
+.product-name {
+  font-size: 1.8rem;
 }
-.product-description{
-    font-size: 1.6rem;
-    margin-left: 15px;
+.product-description {
+  font-size: 1.6rem;
+  margin-left: 15px;
 }
 
-.page-foot{
-    box-sizing: border-box;
-    background-color: var(--principal-color);
-    width: 100%;
-    margin-top: 100px;
-    height: 200px;
-    box-shadow: 0px 2px 80px 4px;
+.page-foot {
+  box-sizing: border-box;
+  background-color: var(--principal-color);
+  width: 100%;
+  margin-top: 100px;
+  height: 200px;
+  box-shadow: 0px 2px 80px 4px;
 }
 
 .container .container1 p {
-    color: #000000;
-    font-family: "Roboto", sans-serif;
+  color: #000000;
+  font-family: "Roboto", sans-serif;
 }
 
 .contenedor1 {
-    font-size: 2.5rem;
-    flex: 0 0 50%;
-    padding: 20px;
-    box-sizing: border-box;
-    margin-top: 2%;
-    margin-right: 0%;
-    text-align: center;
+  font-size: 2.5rem;
+  flex: 0 0 50%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: 2%;
+  margin-right: 0%;
+  text-align: center;
 }
 
 .contenedor2 {
-    font-size: 2.5rem;
-    background-color: #67E8F9;
-    border: 2px solid black;
-    border-radius: 7px;
-    flex: 0 0 48%;
-    padding: 20px;
-    margin: 4px;
-    box-sizing: border-box;
+  font-size: 2.5rem;
+  background-color: #67e8f9;
+  border: 2px solid black;
+  border-radius: 7px;
+  flex: 0 0 48%;
+  padding: 20px;
+  margin: 4px;
+  box-sizing: border-box;
 }
 
 .contenedor3 {
-    font-size: 2.5rem;
-    background-color: #67E8F9;
-    border: 2px solid black;
-    border-radius: 7px;
-    flex: 0 0 48%;
-    padding: 20px;
-    margin: 4px;
-    box-sizing: border-box;
+  font-size: 2.5rem;
+  background-color: #67e8f9;
+  border: 2px solid black;
+  border-radius: 7px;
+  flex: 0 0 48%;
+  padding: 20px;
+  margin: 4px;
+  box-sizing: border-box;
 }
 
 .lavadora {
-    flex: 0 0 50%;
-    max-width: 40%;
-    height: 40%;
-    margin: 5%;
+  flex: 0 0 50%;
+  max-width: 40%;
+  height: 40%;
+  margin: 5%;
 }
 
 .container .container1 {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
 }
 
+/*Ricardo CSS*/
+.reparacionrs .informacionrs {
+  display: flex;
+  flex-direction: column;
+}
+
+.reparacionrs .informacionrs .contenedorrs {
+  display: flex;
+  margin: 3rem auto;
+  max-width: 110rem;
+}
+
+.servicio-tecnico-todasrs,
+.reparacionrs .informacionrs .contenedor2rs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.titulo-principalrs,
+.reparacionrs .informacionrs .titulors {
+  display: flex;
+  align-items: center;
+  background-color: var(--title-background-richard);
+  justify-content: center;
+  text-align: center;
+  height: 10rem;
+  color: var(--title-color-richard);
+  font-size: 4rem;
+}
+
+.reparacionrs .informacionrs .contenedor2rs div h2 {
+  color: var(--subtitle-color-richard);
+  font-size: 2rem;
+}
+
+.reparacionrs .informacionrs .contenedor2rs div p {
+  line-height: 1.4;
+  font-size: 2rem;
+}
+
+.reparacionrs .informacionrs .contenedor2rs div {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 1.2rem;
+  width: 50%;
+}
+.reparacionrs .informacionrs .contenedor2rs div img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 600px) {
+	.servicio-tecnico-todasrs,
+  .reparacionrs .informacionrs .contenedor2rs {
+    flex-wrap: wrap;
+  }
+	.reparacionrs .informacionrs .contenedorrs div{
+    width: 40rem;
+  }
+}
