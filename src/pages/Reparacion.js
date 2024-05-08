@@ -38,6 +38,27 @@ const Reparacion = () => {
 					</div>
 				</div>
 			</div>
+			<div className="todaslasmarcasrs">
+				<div className="titulo titulo-principalrs">
+					<h1>SERVICIO TÉCNICO TODAS LAS MARCAS</h1>
+				</div>
+				<div className="contenedorrs">
+					<div className="contenedor2rs servicio-tecnico-todasrs">
+						<div>
+							<img src="marcas/aceb.png" alt="" />
+							<img src="marcas/centrales.png" alt="" />
+							<img src="marcas/challenger.png" alt="" />
+							<img src="marcas/electrolux.png" alt="" />
+						</div>
+						<div>
+							<img src="marcas/lg.png" alt="" />
+							<img src="marcas/mabe.png" alt="" />
+							<img src="marcas/samsung.png" alt="" />
+							<img src="marcas/whirlpool.png" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
 	</div>
 }
