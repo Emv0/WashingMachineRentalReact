@@ -1,5 +1,7 @@
-const Reparacion = ()=>{
-    return <h1>Página de reparacion</h1>
+const Reparacion = () => {
+	return <>
+
+	</>
 }
 
 export default Reparacion;
