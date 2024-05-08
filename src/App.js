@@ -7,7 +7,6 @@ import Sedes from './pages/Sedes';
 import Reparacion from './pages/Reparacion';
 import Nosotros from './pages/Nosotros';
 import IniciarSesion from './pages/IniciarSesion';
-import Footer from './components/Footer';
 
 function App() {
   return (
