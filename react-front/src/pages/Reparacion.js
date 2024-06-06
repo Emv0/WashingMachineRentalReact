@@ -3,8 +3,8 @@ const Reparacion = () => {
 		<section className="reparacionrs">
 			<div className="informacionrs">
 				<div className="titulors">
-					<h1>SERVICIO TÉCNICO, REPARACIÓN, ARREGLO Y MANTENIMIENTO DE LAVADORAS A
-						DOMICILIO</h1>
+					<h2>SERVICIO TÉCNICO, REPARACIÓN, ARREGLO Y MANTENIMIENTO DE LAVADORAS A
+						DOMICILIO</h2>
 				</div>
 				<div className="contenedorrs">
 					<div className="contenedor2rs">

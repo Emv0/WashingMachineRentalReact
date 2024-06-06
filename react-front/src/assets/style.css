@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
-
 * {
   font-family: "Nunito", sans-serif;
   font-style: normal;
@@ -21,6 +20,12 @@
   --subtitle-color-richard: #0c03b2;
   --title-background-richard: #0c03b2;
   --font-color-richard: #000;
+}
+
+.modal-open {
+  overflow: hidden;
+  padding-right: 0 !important; /* Asegúrate de que el padding-right sea 0 */
+  margin-right: 0 !important; /* Asegúrate de que el margin-right sea 0 */
 }
 
 body {
@@ -107,6 +112,8 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
+  overflow-x:visible;
+  overflow-y: visible;
 }
 
 .products-title {
@@ -115,11 +122,14 @@ body {
 }
 
 .items-container{
+  box-sizing: content-box;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  flex-wrap: wrap;
-  width: 66%;
+  justify-content: center;
+  overflow-x: visible;
+  overflow-y: hidden;
+  width: 70%;
 }
 
 .item{
@@ -134,7 +144,6 @@ body {
   border-radius: 15px;
   margin-left: 10px;
   margin-top: 15px;
-  box-shadow: 0px 0px 30px 3px;
   padding: 5px;
 }
 
@@ -155,10 +164,12 @@ body {
 
 .product-name {
   font-size: 1.8rem;
+  overflow-y: hidden;
 }
 .product-description {
   font-size: 1.6rem;
   margin-left: 15px;
+  overflow-y: hidden;
 }
 
 .page-foot {

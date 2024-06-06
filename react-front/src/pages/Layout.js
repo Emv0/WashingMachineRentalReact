@@ -1,21 +1,50 @@
 import {Outlet,Link} from "react-router-dom";
 import { useState } from "react";
-import "../assets/style.css"
+import "../assets/style.css";
+import "../assets/adminStyle.css";
 import Footer from "../components/Footer";
-
+import ConsModal from "../components/ModalCreate";
+import AdminMenu from "../components/AdminMenu";
+import ModalConsult from "../components/ModalConsult";
 
 const Layout = ()=>{
 
-    const [menuVisible, setMenuVisible] = useState(false)
+    const [menuVisible, setMenuVisible] = useState(false);
     const generateMenu = ()=>{
         setMenuVisible(!menuVisible)
     }
     const hideMenu = ()=>{
         setMenuVisible(false)
     }
+    const [lgShow, setLgShow] = useState(false);
+
+    const activeModal = ()=>{
+        document.body.classList.add('modal-open');
+        setLgShow(true)
+    }
+    const closeModal = ()=>{
+        setLgShow(false)
+    }
+
+    const [adminVisible,setAdminVisible] = useState(false)
+
+    const showAdmin = ()=>{
+        setAdminVisible(true);
+    }
+
+    const hideAdmin = ()=>{
+        setAdminVisible(false);
+    }
+
+    const onAdminMenu = ()=>{
+        setAdminVisible(true)
+    }
+
+    
+
     return<div>
         <header className="header-container">
-            <Link to='/'className="name">Nombre</Link> 
+            <Link to='/'className="name">LAVAMASXMENOS</Link> 
             <nav className="nav-container">
                 <section className="list-container">
                     <ul>
@@ -34,7 +63,8 @@ const Layout = ()=>{
                     </ul>
                 </section>
             </nav>
-            <i class="fa-solid fa-bars" id="menu-responsive" onClick={generateMenu} style={{color:"#ffffff;", fontSize:"2.5rem"}}></i>
+            <i className="fa-solid fa-bars" id="menu-responsive" onClick={generateMenu} style={{color:"#ffffff;", fontSize:"2.5rem"}}></i>
+            <i className="fa-regular fa-square-caret-down admin-menu"  onPointerEnter={showAdmin}></i>
             <div id="navResponsiveContainer" className="navResponsiveContainer" style={{display: menuVisible ? "flex" : "none"}}>
                 <nav className="nav_container-2">
                     <section className="list_container-2">
@@ -58,11 +88,13 @@ const Layout = ()=>{
                     </section>
                 </nav>
             </div>
-            <section class="btn-container">
+            <section className="btn-container">
                 <Link to='/IniciarSesion' className="link-item">Iniciar sesión</Link>
-                <button className="register-btn">Registrarse</button>
+                <button className="register-btn" onClick={activeModal}>Registrarse</button>
             </section>
         </header>
+        <AdminMenu display={adminVisible} constAdmin={onAdminMenu} hideAdmin={hideAdmin}/>
+        <ConsModal lgShow={lgShow} closeModal={closeModal}/>
         <Outlet/>
         <Footer/>
     </div>
