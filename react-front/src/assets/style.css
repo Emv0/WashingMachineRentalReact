@@ -504,3 +504,36 @@ body {
     display: none !important;
   }
 }
+
+/*kevin sedes*/
+.sedesContenedor{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.sedes1{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  
+}
+.sedesimg{
+  height: 400px;
+  width: 270px;
+  transition: transform 0.2s;
+}
+.sedesimg:hover{
+  transform: scale(0.9);
+}
+
+@media (max-width:768px) {
+  .sedesContenedor{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .sedes1{
+    margin-bottom: 10px;
+  }
+  
+}
