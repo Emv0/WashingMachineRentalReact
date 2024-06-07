@@ -31,10 +31,10 @@ const ModalConsult = ({ lgShowConsult, closeModalConsult }) => {
             name:"Acciones",
             selector: row =>(
                 <div>
-                    <i class="fa-solid fa-trash btn btn-primary" style={{fontSize:16, marginRight:"2px"}}></i>
-                    <i class="fa-solid fa-pen btn btn-primary" style={{fontSize:16,marginRight:"2px"}}></i>
+                    <i id={row.id} class="fa-solid fa-trash btn btn-primary" style={{fontSize:12, marginRight:"2px"}}></i>
+                    <i id={row.id} class="fa-solid fa-pen btn btn-primary" style={{fontSize:12,marginRight:"2px"}}></i>
                 </div>
-            )
+                )
         }
     ];
 
@@ -62,13 +62,11 @@ const ModalConsult = ({ lgShowConsult, closeModalConsult }) => {
                     </Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <div>
                         <DataTable columns={columns} 
                         data={usersDb}                 
                         pagination
                         highlightOnHover
                         pointerOnHover/>
-                    </div>
                 </Modal.Body>
             </Modal>
         </>
