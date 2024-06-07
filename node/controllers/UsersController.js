@@ -1,6 +1,4 @@
-import { where } from 'sequelize';
 import UsersModel from '../models/UsersModel.js';
-const connection = require("express-myconnection");
 
 // exports.create = (req,res) => {
 //     console.log(req.body);
@@ -47,12 +45,12 @@ export const consult = async ( req, res ) => {
 export const getConsult = async ( req, res ) => {
 
     try{
-        const usersDb = UsersModel.findAll({
+        const userDb = await UsersModel.findAll({
             where:{
                 id:req.params.id
             }
         });
-        res.json(usersDb);
+        res.json(userDb[0]);
     }catch(error){
         res.json({message: error.message})
     }

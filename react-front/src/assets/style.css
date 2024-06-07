@@ -1,13 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
-* {
+body{
   font-family: "Nunito", sans-serif;
   font-style: normal;
-  font-size: 62.5%;
   margin: 0;
   overflow-x: hidden;
   padding: 0;
-  box-sizing: border-box;
 }
 
 :root {
@@ -55,7 +53,7 @@ body {
 }
 
 .name {
-  font-size: 3.2rem;
+  font-size: 32px;
   text-decoration: none;
   margin-right: 5%;
   color: var(--title-color);
@@ -63,7 +61,7 @@ body {
 
 .link-item {
   color: var(--nav-fonts-color);
-  font-size: 1.8rem;
+  font-size: 18px;
   text-decoration: none;
 }
 
@@ -83,7 +81,7 @@ body {
 }
 
 .register-btn {
-  font-size: 1.8rem;
+  font-size: 18px;
   padding: 4px;
   border-radius: 10px;
   border: none;
@@ -95,13 +93,13 @@ body {
 }
 
 .btn-container > h5 > a {
-  font-size: 2rem;
+  font-size: 20px;
   text-decoration: none;
   color: var(--nav-fonts-color);
 }
 
 .fa-bars {
-  font-size: 4rem;
+  font-size: 40px;
   font-weight: normal;
   margin-right: 5%;
   color: var(--nav-fonts-color);
@@ -118,7 +116,7 @@ body {
 
 .products-title {
   overflow-y: hidden;
-  font-size: 2.8rem;
+  font-size: 28px;
 }
 
 .items-container{
@@ -163,11 +161,11 @@ body {
 }
 
 .product-name {
-  font-size: 1.8rem;
+  font-size: 18px;
   overflow-y: hidden;
 }
 .product-description {
-  font-size: 1.6rem;
+  font-size: 16px;
   margin-left: 15px;
   overflow-y: hidden;
 }
@@ -187,7 +185,7 @@ body {
 }
 
 .contenedor1 {
-  font-size: 2.5rem;
+  font-size: 25px;
   flex: 0 0 50%;
   padding: 20px;
   box-sizing: border-box;
@@ -197,7 +195,7 @@ body {
 }
 
 .contenedor2 {
-  font-size: 2.5rem;
+  font-size: 25px;
   background-color: #67e8f9;
   border: 2px solid black;
   border-radius: 7px;
@@ -208,7 +206,7 @@ body {
 }
 
 .contenedor3 {
-  font-size: 2.5rem;
+  font-size: 25px;
   background-color: #67e8f9;
   border: 2px solid black;
   border-radius: 7px;
@@ -264,17 +262,17 @@ body {
   text-align: center;
   height: 8rem;
   color: var(--title-color-richard);
-  font-size: 4rem;
+  
 }
 
 .reparacionrs .informacionrs .contenedor2rs div h2 {
   color: var(--subtitle-color-richard);
-  font-size: 2rem;
+  font-size: 20px;
 }
 
 .reparacionrs .informacionrs .contenedor2rs div p {
   line-height: 1.4;
-  font-size: 2rem;
+  font-size: 20px;
 }
 
 .reparacionrs .informacionrs .contenedor2rs div {
@@ -333,7 +331,7 @@ body {
 
 .list_container-2{
   height: 100%;
-}
+}   
 .mainContent {
   display: flex;
   flex-direction: column;
@@ -370,14 +368,14 @@ body {
 }
 
 .articleTitle {
-  font-size: 3rem;
+  font-size: 30px;
   margin-top: 20px;
   background-color: #1d40af;
   color: #ccc;
 }
 
 .articleP {
-  font-size: 2rem;
+  font-size: 20px;
   margin: 20px 0;
 }
 
@@ -397,11 +395,11 @@ body {
 
 .asideContent h4 {
   margin-top: 0;
-  font-size: 1.7rem;
+  font-size: 17px;
 }
 
 .asideContent label {
-  font-size: 1.5rem;
+  font-size: 15px;
   display: block;
   margin-bottom: 5px;
 }
@@ -422,7 +420,7 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 15px;
 }
 
 .asideContent button:hover {
@@ -442,7 +440,7 @@ body {
 .sectionContent {
   width: 100%;
   max-width: 800px;
-  font-size: 2rem;
+  font-size: 20px;
   color: #ccc;
   box-shadow: 0 1px 12px rgba(0, 0, 0, 0.2);
   padding: 30px;
@@ -453,13 +451,28 @@ body {
 .sectionTitle {
   margin-top: 20px;
   margin-bottom: 10px;
-  font-size: 3rem;
+  font-size: 30px;
   text-align: justify;
 }
 
 .sectionP {
-  font-size: 2rem;
+  font-size: 20px;
   text-align: justify;
+}
+
+.li-admin{
+  font-size: 10px;
+}
+
+.swal2-popup {
+  font-size: 14px !important;
+  height: 200px !important;
+  width: 22% !important;
+}
+.swal2-icon {
+  width: 50px !important;    
+  height: 50px !important;
+  font-size: 10.2px !important; 
 }
 
 @media (max-width:943px) {
@@ -470,7 +483,7 @@ body {
 
   .name {
       display: none;
-      font-size: 3.2rem;
+      font-size: 32rem;
       text-decoration: none;
       margin-right: 5%;
       color: var(--title-color);

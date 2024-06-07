@@ -5,10 +5,10 @@ import "../assets/adminStyle.css";
 import Footer from "../components/Footer";
 import ConsModal from "../components/ModalCreate";
 import AdminMenu from "../components/AdminMenu";
-import ModalConsult from "../components/ModalConsult";
 
 const Layout = ()=>{
 
+    const [flag,setFlag] =useState(false)
     const [menuVisible, setMenuVisible] = useState(false);
     const generateMenu = ()=>{
         setMenuVisible(!menuVisible)
@@ -19,6 +19,7 @@ const Layout = ()=>{
     const [lgShow, setLgShow] = useState(false);
 
     const activeModal = ()=>{
+        setFlag(false)
         document.body.classList.add('modal-open');
         setLgShow(true)
     }
@@ -44,7 +45,7 @@ const Layout = ()=>{
 
     return<div>
         <header className="header-container">
-            <Link to='/'className="name">LAVAMASXMENOS</Link> 
+            <Link to='/'className="name">LAVAEXPRESS</Link> 
             <nav className="nav-container">
                 <section className="list-container">
                     <ul>
@@ -94,7 +95,7 @@ const Layout = ()=>{
             </section>
         </header>
         <AdminMenu display={adminVisible} constAdmin={onAdminMenu} hideAdmin={hideAdmin}/>
-        <ConsModal lgShow={lgShow} closeModal={closeModal}/>
+        <ConsModal lgShow={lgShow} closeModal={closeModal} flag={flag}/>
         <Outlet/>
         <Footer/>
     </div>

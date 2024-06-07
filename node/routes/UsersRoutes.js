@@ -1,8 +1,12 @@
-const express = require('express');
-const router = express.Router();
-const UsersController = require('../controllers/UsersController');
+import express from 'express';
+import {create, consult, getConsult, update, deleteUser} from'../controllers/UsersController.js';
 
-router.get('/userConsult', UsersController.consult);
-router.post('/userCreate',UsersController.create);
+const userRouter = express.Router();
 
-module.exports = router;
+userRouter.get( '/userConsult',    consult    );
+userRouter.post('/userCreate',     create     );
+userRouter.get( '/userUnique/:id', getConsult );
+userRouter.put( '/userUpdate/:id', update     );
+userRouter.delete('/userDelete/id',deleteUser );
+
+export default userRouter;
