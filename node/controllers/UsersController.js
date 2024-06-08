@@ -73,11 +73,12 @@ export const update = async ( req, res )=>{
 export const deleteUser = async ( req,res)=>{
 
     try{
-        await UsersModel.destroy(req.body,{
+        await UsersModel.destroy({
             where:{ id:req.params.id }
         });
+        res.status(200).json("Usuario eliminado")
     }catch(error){
-        res.json({message:error.message});
+        res.status(500).json({message:error.message});
     }
 
 }

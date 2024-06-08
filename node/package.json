@@ -15,6 +15,7 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.19.2",
+    "faker": "^6.6.6",
     "mysql2": "^3.10.0",
     "sequelize": "^6.37.3"
   }

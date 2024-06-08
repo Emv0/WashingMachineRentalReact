@@ -8,7 +8,7 @@ import AdminMenu from "../components/AdminMenu";
 
 const Layout = ()=>{
 
-    const [flag,setFlag] =useState(false)
+    const [flag,setFlag] =useState(0)
     const [menuVisible, setMenuVisible] = useState(false);
     const generateMenu = ()=>{
         setMenuVisible(!menuVisible)
@@ -19,7 +19,7 @@ const Layout = ()=>{
     const [lgShow, setLgShow] = useState(false);
 
     const activeModal = ()=>{
-        setFlag(false)
+        setFlag(0)
         document.body.classList.add('modal-open');
         setLgShow(true)
     }
