@@ -91,18 +91,18 @@ export default function ModalUpdate({ lgShow, closeModal, userID, updateUser }) 
                     <form onSubmit={updatedUser}>
                         <div className='row mt-3 wrap'>
                             <div className='col-6'>
-                                <label style={{ fontSize: 16 }} className='form-label' for="name">Nombre</label>
+                                <label style={{ fontSize: 16 }} className='form-label' htmlFor="name">Nombre</label>
                                 <input style={{ fontSize: 16 }} value={userName} name='name' className="form-control" id='name' type="text" placeholder='Nombre' onChange={(e) => setUserName(e.target.value)} />
                             </div>
                             <div className='col-6'>
-                                <label style={{ fontSize: 16 }} className='form-label' for="document">Documento</label>
+                                <label style={{ fontSize: 16 }} className='form-label' htmlFor="document">Documento</label>
                                 <input style={{ fontSize: 16 }} value={userDocument} name='document' className="form-control" id='document' type="text" placeholder='Documento' onChange={(e) => setUserDocument(e.target.value)} />
                             </div>
                         </div>
                         <div>
                             <div className='row mt-5 mb-5'>
                                 <div className='col-6'>
-                                    <label style={{ fontSize: 16 }} className='form-label' for="password">Contraseña
+                                    <label style={{ fontSize: 16 }} className='form-label' htmlFor="password">Contraseña
                                     </label>
                                     <div className="d-flex align-items-center">
                                         <input style={{ fontSize: 16 }} value={userPassword} name='password' className="form-control" id='password' type={passShow ? "text" : "password"} placeholder='Contraseña' onChange={(e) => setUserPassword(e.target.value)} />
@@ -110,7 +110,7 @@ export default function ModalUpdate({ lgShow, closeModal, userID, updateUser }) 
                                     </div>
                                 </div>
                                 <div className='col-6'>
-                                    <label style={{ fontSize: 16 }} className='form-label' for="email">Correo electrónico</label>
+                                    <label style={{ fontSize: 16 }} className='form-label' htmlFor="email">Correo electrónico</label>
                                     <input style={{ fontSize: 16 }} value={userEmail} onChange={(e) => setUserEmail(e.target.value)} name='email' className="form-control" id='email' type="email" placeholder='Correo' />
                                 </div>
                             </div>

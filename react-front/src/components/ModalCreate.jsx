@@ -32,6 +32,7 @@ const ConsModal = ({ lgShow, closeModal, flag }) => {
                 timer: 1500
             });
         } else {
+            e.preventDefault();
             axios.post(`${URI}userCreate`, formData)
                 .then(
                     console.log("informacion enviada")
@@ -39,6 +40,7 @@ const ConsModal = ({ lgShow, closeModal, flag }) => {
                 .catch(err => {
                     console.log("error enviando", err, formData)
                 })
+                window.location.reload();
         }
     }
     return (
@@ -59,22 +61,22 @@ const ConsModal = ({ lgShow, closeModal, flag }) => {
                     <form onSubmit={submit} >
                         <div className='row mt-5 wrap'>
                             <div className='col-6'>
-                                <label style={{ fontSize: 16 }} className='form-label' for="name">Nombre</label>
+                                <label style={{ fontSize: 16 }} className='form-label' htmlFor="name">Nombre</label>
                                 <input style={{ fontSize: 16 }} name='name' className="form-control" id='name' type="text" placeholder='Nombre' onChange={change} />
                             </div>
                             <div className='col-6'>
-                                <label style={{ fontSize: 16 }} className='form-label' for="document">Documento</label>
+                                <label style={{ fontSize: 16 }} className='form-label' htmlFor="document">Documento</label>
                                 <input style={{ fontSize: 16 }} name='document' className="form-control" id='document' type="text" placeholder='Documento' onChange={change} />
                             </div>
                         </div>
                         <div>
                             <div className='row mt-5 mb-5'>
                                 <div className='col-6'>
-                                    <label style={{ fontSize: 16 }} className='form-label' for="password">Contraseña</label>
+                                    <label style={{ fontSize: 16 }} className='form-label' htmlFor="password">Contraseña</label>
                                     <input style={{ fontSize: 16 }} name='password' className="form-control" id='password' type="password" placeholder='Contraseña' onChange={change} />
                                 </div>
                                 <div className='col-6'>
-                                    <label style={{ fontSize: 16 }} className='form-label' for="email">Correo electrónico</label>
+                                    <label style={{ fontSize: 16 }} className='form-label' htmlFor="email">Correo electrónico</label>
                                     <input style={{ fontSize: 16 }} name='email' className="form-control" id='email' type="email" placeholder='Correo' onChange={change} />
                                 </div>
                             </div>

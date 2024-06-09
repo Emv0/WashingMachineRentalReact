@@ -6,7 +6,6 @@ import LavaConNosotros from './pages/LavaConNosotros';
 import Sedes from './pages/Sedes';
 import Reparacion from './pages/Reparacion';
 import Nosotros from './pages/Nosotros';
-import IniciarSesion from './pages/IniciarSesion';
 
 function App() {
   return (
@@ -19,7 +18,6 @@ function App() {
             <Route path='/Sedes' element={<Sedes/>}/>
             <Route path='/Reparacion' element={<Reparacion/>}/>
             <Route path='/Nosotros' element={<Nosotros/>}/>
-            <Route path='/IniciarSesion' element={<IniciarSesion/>}/>
           </Route>
         </Routes>
       </BrowserRouter>
