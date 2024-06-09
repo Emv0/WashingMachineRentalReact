@@ -50,6 +50,16 @@ const ModalConsult = ({ lgShowConsult, closeModalConsult }) => {
             });
     }, []);
 
+    const updateUser = () => {
+        axios.get(`${URI}userConsult`)
+            .then(response => {
+                setUsersDb(response.data);
+            })
+            .catch(err => {
+                console.log("error", err)
+            });
+    }
+
     const [lgShow, setLgConsult] = useState(false);
     const [userID, setUserID] = useState(0);
 
@@ -60,6 +70,7 @@ const ModalConsult = ({ lgShowConsult, closeModalConsult }) => {
 
     const closeModal = () => {
         setLgConsult(false)
+        updateUser();
     }
 
 
@@ -119,7 +130,7 @@ const ModalConsult = ({ lgShowConsult, closeModalConsult }) => {
                         pointerOnHover />
                 </Modal.Body>
             </Modal>
-            <ModalUpdate lgShow={lgShow} closeModal={closeModal} userID={userID} />
+            <ModalUpdate lgShow={lgShow} closeModal={closeModal} userID={userID} updateUser={updateUser} />
         </>
     )
 }

@@ -479,6 +479,10 @@ body {
   font-size: 15px !important;
 }
 
+#pass-eye:hover{
+  cursor: pointer;
+}
+
 @media (max-width:943px) {
 
   .list-container{
