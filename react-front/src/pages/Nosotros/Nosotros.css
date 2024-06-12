@@ -1,0 +1,126 @@
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    align-items: center;
+  }
+  
+  .contentWrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 90%;
+    max-width: 1200px;
+    margin-bottom: 50px;
+  }
+  
+  .article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    height: auto;
+    color: rgb(87, 87, 87);
+  }
+  
+  .containerArticleImage {
+    width: 50%;
+    height: auto;
+  }
+  
+  .articleText {
+    text-align: center;
+  }
+  
+  .articleTitle {
+    font-size: 30px;
+    margin-top: 20px;
+    background-color: #1d40af;
+    color: #ccc;
+  }
+  
+  .articleP {
+    font-size: 20px;
+    margin: 20px 0;
+  }
+  .articleImage {
+    width: 100%;
+    height: auto;
+  }
+  
+  .asideContent {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 25%;
+    margin-left: 20px;
+  }
+  
+  .asideContent h4 {
+    margin-top: 0;
+    font-size: 17px;
+  }
+  
+  .asideContent label {
+    font-size: 15px;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .asideContent input[type="text"],
+  .asideContent input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .asideContent button {
+    background-color: #67e8f9;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+  }
+  
+  .asideContent button:hover {
+    background-color: #1d40af;
+  }
+  
+  .divSection {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    width: 90%;
+    max-width: 1200px;
+    height: auto;
+    font-family: "roboto", sans-serif;
+  }
+  
+  .sectionContent {
+    width: 100%;
+    max-width: 800px;
+    font-size: 20px;
+    color: #ccc;
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    background-color: #1d40af;
+    margin-right: 30px;
+  }
+  
+  .sectionTitle {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    text-align: justify;
+  }
+  
+  .sectionP {
+    font-size: 20px;
+    text-align: justify;
+  }

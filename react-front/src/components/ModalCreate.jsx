@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useState } from 'react';
 import Swal from 'sweetalert2';
 
-const ConsModal = ({ lgShow, closeModal, flag }) => {
+const ConsModal = ({ lgShow, closeModal,flag }) => {
     const URI = "http://localhost:8000/";
     const [formData, setFormData] = useState({
         name: '',
@@ -11,27 +11,27 @@ const ConsModal = ({ lgShow, closeModal, flag }) => {
         password: '',
         email: ''
     });
-    
+
     const change = (e) => {
         const { name, value } = e.target;
-        setFormData(prevFormData => ({
+        setFormData(prevFormData =>({
             ...prevFormData,
             [name]: value
         }))
     }
 
     const submit = (e) => {
-        if (formData.name === "" || formData.document === "" || formData.password === "" || formData.email === "") {
+        if(formData.name === "" || formData.document === "" || formData.password === "" || formData.email === ""){
             e.preventDefault();
-            Swal.fire({
-                position: "top-end",
-                icon: "error",
-                title: "Error",
-                showConfirmButton: false,
-                text: 'Todos los campos deben estar completos',
-                timer: 1500
-            });
-        } else {
+                Swal.fire({
+                    position: "top-end",
+                    icon: "error",
+                    title: "Error",
+                    showConfirmButton: false,
+                    text: 'Todos los campos deben estar completos',
+                    timer: 1500
+                });
+        }else{
             axios.post(`${URI}userCreate`, formData)
                 .then(
                     console.log("informacion enviada")
@@ -52,7 +52,7 @@ const ConsModal = ({ lgShow, closeModal, flag }) => {
             >
                 <Modal.Header closeButton style={{ fontSize: 13 }}>
                     <Modal.Title style={{ fontSize: 20 }} id="example-modal-sizes-title-lg">
-                        {flag ? "Registrar usuario" : "Registrarse"}
+                        {flag ? "Registrar usuario":"Registrarse"}
                     </Modal.Title>
                 </Modal.Header>
                 <Modal.Body>

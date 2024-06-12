@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../assets/adminStyle.css";
+import "../pages/Layout/adminStyle.css";
 import ModalConsult from "./ModalConsult";
 import ModalCreate from "./ModalCreate";
 
@@ -8,7 +8,7 @@ const AdminMenu = (props)=>{
 
     const [lgShowConsult, setShowConsult] = useState(false);
     const [modalCreate, setModalCreate] = useState(false);
-    const [flag,setFlag] = useState(0)
+    const [flag,setFlag] =useState(false)
     
     const activeModalConsult = ()=>{
         setShowConsult(true)
@@ -20,13 +20,14 @@ const AdminMenu = (props)=>{
 
     const openModalCreate = ()=>{
         setModalCreate(true)
-        setFlag(1);
+        setFlag(true);
     }
 
-    const closeModalConsult = ()=>{
+    const closeModalClose = ()=>{
         setModalCreate(false)
     }
 
+    console.log(props.display)
     return<>
         <div className="container-admin" style={{display: props.display ? 'flex':'none'}} onMouseEnter={props.constAdmin} onMouseLeave={() => setTimeout(props.hideAdmin, 200)}>
             <div className="menu-class-close">
@@ -39,7 +40,7 @@ const AdminMenu = (props)=>{
                 <li className="li-admin"><i className="fa-solid fa-plus fa-mar" style={{color: "#ffffff",fontSize:23}}></i>Registrar Lavadoras</li>
             </ul>
         </div>
-        <ModalCreate lgShow={modalCreate} closeModal={closeModalConsult} flag={flag}/>
+        <ModalCreate lgShow={modalCreate} closeModal={closeModalClose} flag={flag}/>
         <ModalConsult lgShowConsult={lgShowConsult} closeModalConsult={closeModal}/>
     </>
 }

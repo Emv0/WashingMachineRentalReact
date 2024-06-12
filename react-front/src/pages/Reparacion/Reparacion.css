@@ -1,0 +1,75 @@
+.reparacionrs {
+    margin-top: 3rem;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+  }
+  .reparacionrs .informacionrs {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .reparacionrs .informacionrs .contenedorrs {
+    display: flex;
+    margin: 3rem auto;
+    max-width: 110rem;
+  }
+  
+  .servicio-tecnico-todasrs,
+  .reparacionrs .informacionrs .contenedor2rs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .titulo-principalrs,
+  .reparacionrs .informacionrs .titulors {
+    display: flex;
+    align-items: center;
+    background-color: var(--title-background-richard);
+    justify-content: center;
+    text-align: center;
+    height: 8rem;
+    color: var(--title-color-richard);
+    
+  }
+  
+  .reparacionrs .informacionrs .contenedor2rs div h2 {
+    color: var(--subtitle-color-richard);
+    font-size: 20px;
+  }
+  
+  .reparacionrs .informacionrs .contenedor2rs div p {
+    line-height: 1.4;
+    font-size: 20px;
+  }
+  
+  .reparacionrs .informacionrs .contenedor2rs div {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 1.2rem;
+    width: 50%;
+  }
+  .reparacionrs .informacionrs .contenedor2rs div img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1.5rem;
+  }
+
+  .todaslasmarcasrs .contenedorrs {
+    display: flex;
+    margin: 3rem auto;
+    max-width: 110rem;
+  }
+  
+  .servicio-tecnico-todasrs .contenedor2rs div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .servicio-tecnico-todasrs img {
+    width: 250px;
+    height: auto;
+  }

@@ -1,0 +1,23 @@
+main{
+    background-color:  #ffffff;
+    padding: 10px;
+
+}
+.container{
+    background-color:  #2C6F99;
+    width: 100%;
+}
+
+.carousel-item{
+    background-color:  #2C6F99;
+}
+
+.carr-img {
+    border-radius: 10px;
+  }
+  
+  .carousel-inner {
+    border-radius: 10px;
+    margin-top: 50px;
+  }
+  

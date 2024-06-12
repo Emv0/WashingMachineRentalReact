@@ -9,12 +9,12 @@ const Sedes = ()=>{
 
     <div className="sedesContenedor">
         <div className="sedes1">
-        <img className="sedesimg" src="https://mlnl4v1vzwpm.i.optimole.com/w:1024/h:766/q:mauto/f:best/ig:avif/https://equiposlavanderiaindustrial.com/wp-content/uploads/2021/09/Lavanderia-industrial.jpg"></img>
+        <img className="sedesimg" alt="" src="https://mlnl4v1vzwpm.i.optimole.com/w:1024/h:766/q:mauto/f:best/ig:avif/https://equiposlavanderiaindustrial.com/wp-content/uploads/2021/09/Lavanderia-industrial.jpg"/>
         <p>Dg 44 #33B-76 Medellin </p>
         </div>
 
         <div className="sedes1">
-        <img className="sedesimg" src="https://www.limp.es/wp-content/uploads/2024/01/limpieza-covid-1.jpg"></img>
+        <img className="sedesimg" alt="" src="https://www.limp.es/wp-content/uploads/2024/01/limpieza-covid-1.jpg"/>
         <p>Av 44 #67-12 Sabaneta </p>
         </div>
     </div>

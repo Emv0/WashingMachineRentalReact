@@ -1,12 +1,12 @@
 import React from 'react';
 import { BrowserRouter, Route,Routes } from 'react-router-dom';
-import Layout from './pages/Layout';
-import Inicio from './pages/Inicio';
-import LavaConNosotros from './pages/LavaConNosotros';
+import Layout from './pages/Layout/Layout.js';
+import Inicio from './pages/Inicio/Inicio.js';
+import Reserva from './pages/Reserva/Reserva.js';
 import Sedes from './pages/Sedes';
-import Reparacion from './pages/Reparacion';
-import Nosotros from './pages/Nosotros';
-import IniciarSesion from './pages/IniciarSesion';
+import Reparacion from './pages/Reparacion/Reparacion.js';
+import Nosotros from './pages/Nosotros/Nosotros.js';
+import IniciarSesion from '../src/pages/InisiarSesion/IniciarSesion.js';
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Layout />}>
             <Route path='/' element={<Inicio />}/>
-            <Route path='/LavaConNosotros' element={<LavaConNosotros/>}/>
+            <Route path='/Reserva' element={<Reserva/>}/>
             <Route path='/Sedes' element={<Sedes/>}/>
             <Route path='/Reparacion' element={<Reparacion/>}/>
             <Route path='/Nosotros' element={<Nosotros/>}/>
