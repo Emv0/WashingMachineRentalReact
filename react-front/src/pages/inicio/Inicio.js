@@ -1,3 +1,5 @@
+import "./Inicio.css"
+
 const Inicio = () => {
     return <main>
         <div className="container mt-5  ">
