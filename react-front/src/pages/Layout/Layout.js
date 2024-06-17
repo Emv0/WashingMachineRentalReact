@@ -1,11 +1,11 @@
 import {Outlet,Link} from "react-router-dom";
 import { useEffect, useState } from "react";
-import "../assets/style.css";
-import "../assets/adminStyle.css";
-import Footer from "../components/Footer";
-import ConsModal from "../components/ModalCreate";
-import AdminMenu from "../components/AdminMenu";
-import ModalLogin from "../components/ModalLogin";
+import "./Layout.css";
+import "./adminStyle.css";
+import Footer from "../../components/Footer";
+import ConsModal from "../../components/ModalCreate";
+import AdminMenu from "../../components/AdminMenu";
+import ModalLogin from "../../components/ModalLogin";
 
 const Layout = ()=>{
 
@@ -78,17 +78,15 @@ const Layout = ()=>{
                 <section className="list-container">
                     <ul>
                         <li>
-                            <Link to='/LavaConNosotros'className="link-item">Lava con nosotros</Link>
+                            <Link to='/reservaYa'className="link-item">Reserva Ya</Link>
                         </li>
                         <li>
-                            <Link to='/Sedes' className="link-item">Sedes</Link>
+                            <Link to='/reparaciones' className="link-item">Reparaciones</Link>
                         </li>
                         <li>
-                            <Link to='/Reparacion'className="link-item">Reparación</Link>
+                            <Link to='/contactanos'className="link-item">Contactanos</Link>
                         </li>
-                        <li>
-                            <Link to='/Nosotros' className="link-item">Sobre Nosotros</Link>
-                        </li>
+
                     </ul>
                 </section>
             </nav>

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../assets/adminStyle.css";
+import "../pages/Layout/adminStyle.css";
 import ModalConsult from "./ModalConsult";
 import ModalCreate from "./ModalCreate";
 
