@@ -8,6 +8,7 @@ import ConsModal from "../../components/ModalCreate";
 import AdminMenu from "../../components/AdminMenu";
 import ModalLogin from "../../components/ModalLogin";
 import Avatar from "@mui/material/Avatar";
+import SideBar from "../../components/SideBar";
 
 const Layout = () => {
   const [user, setUser] = useState(null);
@@ -20,6 +21,7 @@ const Layout = () => {
   }, []);
 
   const logOut = () => {
+    window.location.reload();
     sessionStorage.removeItem("authToken");
     sessionStorage.removeItem("user");
     setUser(null);
@@ -70,6 +72,7 @@ const Layout = () => {
   return (
     <div>
       <header className="header-container">
+        <SideBar />
         <Link to="/" className="name">
           <img className="logo" src={logo} alt="Logo" />
         </Link>

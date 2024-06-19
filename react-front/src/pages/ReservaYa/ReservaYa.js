@@ -5,7 +5,7 @@ import axios from 'axios';
 
 //COMPONENTE
 const ReservaYa = () => {
-  const url = "http://alquiler.somee.com/api/lavadora"
+  const url = "http://localhost:8000/machineConsult"
 
   // Declarar el estado para los datos de la API
   const[datosApi, setDatosApi]= useState([])
@@ -17,11 +17,11 @@ const ReservaYa = () => {
       try{
         //CONSULTANDO ALA API
         const response = await axios.get(url)
-        //ASIGNANDO DATOS A satosApi atraves del MOD. SET
-        setDatosApi(response.data)
+        //ASIGNANDO DATOS A datosApi atraves del MOD. SET
+        setDatosApi(response.data.machinesDb)
         //MAJENO DE ERRORES
       }catch{
-        console.error("erro al traer los datos: ")
+        console.error("error al traer los datos: ")
       }
     }
     oDatos();
@@ -32,7 +32,6 @@ const ReservaYa = () => {
 
   return (
     <section className="main">
-      {console.log(datosApi)}
       <div className="container-reservaYa">
 
         <div className="titulo">

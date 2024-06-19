@@ -1,10 +1,14 @@
+import axios from 'axios';
 import { useState } from 'react';
 import { ModalFooter } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
 function ModalReserva({ lgShowConsult, closeModalConsult, objlavadoras }) {
-  const { cantidad, capacidad, precioPorHora, descripcion, url } = objlavadoras;
+
+  const urlBack = "http://localhost:8000/";
+
+  const { id, cantidad, capacidad, precioPorHora, descripcion, url } = objlavadoras;
 
   const[valor, setValor]=useState(null);
 
@@ -12,6 +16,25 @@ function ModalReserva({ lgShowConsult, closeModalConsult, objlavadoras }) {
     const valorSeleccionado = parseFloat(e.target.value);
     setValor(valorSeleccionado * precioPorHora);
   };
+
+  const update = async ()=>{
+    
+    if(cantidad === 0){
+      alert("Lavadora no disponible")
+    }else{
+      const newQuantity = cantidad - 1; 
+      try{
+        const response = await axios.put(`${urlBack}machineUpdate/${id}`,{
+          cantidad: newQuantity
+        });
+        console.log("Lavadora reservada con exito", response.data)
+        window.location.reload();
+      }catch(error){
+        console.log("error: ", error)
+      }
+    }
+  }
+
   return (
     <>
       <Modal
@@ -26,7 +49,6 @@ function ModalReserva({ lgShowConsult, closeModalConsult, objlavadoras }) {
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          {console.log(objlavadoras)}
           <div className="card-body text-center d-flex justify-content-around">
           {<img src={url} className="card-img-top" alt={descripcion} />}
             <div className='d-flex-column'>
@@ -50,7 +72,7 @@ function ModalReserva({ lgShowConsult, closeModalConsult, objlavadoras }) {
 
         </Modal.Body>
         <ModalFooter>
-          <Button>Confirmar reserva</Button>
+          <Button onClick={update}>Confirmar reserva</Button>
         </ModalFooter>
       </Modal>
     </>

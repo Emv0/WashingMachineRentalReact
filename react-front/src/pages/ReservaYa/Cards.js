@@ -20,7 +20,7 @@ const Cards = ({ lavadoraCard }) => {
 
   const alerta = () =>{
     Swal.fire({
-      title: "Para poder reservar debes iniciar sesiòn o registrarse",
+      title: "Para reservar debes iniciar sesiòn o registrarte",
       showClass: {
         popup: `
           animate__animated
