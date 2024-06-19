@@ -1,0 +1,126 @@
+.reparaciones-section {
+    max-width: 800px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    color: #333333;
+    margin: 20px auto; 
+  }
+  
+  .reparaciones-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #004066;
+  }
+  
+  .reparaciones-section p {
+    text-align: justify;
+    margin-bottom: 30px;
+  }
+  
+  .servicios-ofrecidos {
+    margin-bottom: 30px;
+  }
+  
+  .servicios-ofrecidos h3 {
+    color: #049dbf;
+  }
+  
+  .servicios-ofrecidos ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #333333;
+  }
+  
+  .formulario-reparacion {
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,64,102,1) 64%);    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .formulario-reparacion h3 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .formulario-reparacion label {
+    display: block;
+    margin-bottom: 8px;
+    color: whitesmoke;
+  }
+  
+  .formulario-reparacion input[type="text"],
+  .formulario-reparacion input[type="tel"],
+  .formulario-reparacion input[type="email"],
+  .formulario-reparacion textarea,
+  .formulario-reparacion input[type="datetime-local"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 1em;
+    color: black;
+  }
+
+  .input {
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 1em;
+    background-color: #ccc;
+    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+    transition: 300ms ease-in-out;
+  }
+  
+  .input:focus {
+    background-color: white;
+    transform: scale(1.05);
+    box-shadow: 13px 13px 100px #969696,
+               -13px -13px 100px #ffffff;
+  }
+  
+  .formulario-reparacion textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .formulario-reparacion button {
+    background-color: #004066;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .formulario-reparacion button:hover {
+    background-color: #049dbf;
+  }
+  
+  .numero-soporte {
+    text-align: center;
+    margin-top: 20px;
+    color: #333333;
+  }
+  
+  .numero-soporte strong {
+    color: #004066;
+  }
+
+  .mensaje-exito {
+    background-color: #4caf50;
+    color: white;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+  }

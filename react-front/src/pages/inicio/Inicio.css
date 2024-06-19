@@ -94,6 +94,11 @@
   margin: 20px 0; 
 }
 
+.promo{
+  text-decoration: none;
+  color: white;
+}
+
 
 @media (max-width: 768px) {
   .slide img {
