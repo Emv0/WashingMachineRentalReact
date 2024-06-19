@@ -1,4 +1,3 @@
-//COMPONENTE HIJO
 import Swal from "sweetalert2";
 import ModalReserva from "./ModalReserva.js";
 import {useState} from 'react';

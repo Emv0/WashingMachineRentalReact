@@ -120,36 +120,31 @@ const Layout = () => {
             <section className="list_container-2">
               <ul>
                 <li>
-                  <Link to="/" className="link-item" onClick={hideMenu}>
+                  <Link to="/" className="link-item-r" onClick={hideMenu}>
                     Inicio
                   </Link>
                 </li>
                 <li>
                   <Link
-                    to="/LavaConNosotros"
-                    className="link-item"
+                    to="/reservaYa"
+                    className="link-item-r"
                     onClick={hideMenu}
                   >
-                    Lava con nosotros
+                    Reserva Ya
                   </Link>
                 </li>
                 <li>
-                  <Link to="/Sedes" className="link-item" onClick={hideMenu}>
-                    Sedes
+                  <Link to="/reparaciones" className="link-item-r" onClick={hideMenu}>
+                    Reparaciones
                   </Link>
                 </li>
                 <li>
                   <Link
-                    to="/Reparacion"
-                    className="link-item"
+                    to="/contactanos"
+                    className="link-item-r"
                     onClick={hideMenu}
                   >
                     Reparación
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/Nosotros" className="link-item" onClick={hideMenu}>
-                    Sobre Nosotros
                   </Link>
                 </li>
               </ul>
