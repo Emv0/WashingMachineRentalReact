@@ -1,0 +1,66 @@
+.main {
+    margin-top: 48px;
+    padding-top: 48px;
+    margin-bottom: 300px;
+}
+
+.container-reservaYa {
+    flex-wrap: wrap;
+    padding-bottom: 48px;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+.card {
+    background-color: #B1DEEF;
+    width: 95%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 10px 10px 10px;
+}
+
+.card-img-top {
+    width: 190px;
+    height: 200px;
+    object-fit: cover;
+    /* Ajusta la imagen para cubrir toda la tarjeta */
+    margin-top: 15px;
+
+}
+.btn-primary{
+    background-color: #003f67;
+    margin-left: 30px;
+}
+ @media (max-width: 991.98px) {
+    .card{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+@media (max-width: 577.98px) {
+    .row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #ras{
+        width: 70%;
+    }
+
+}
+.swal2-confirm{
+    background-color: #003f67 !important;
+}
