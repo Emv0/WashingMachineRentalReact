@@ -79,12 +79,22 @@ body {
 .navResponsiveContainer {
   top: 89px;
   padding-left: 22px;
-  padding-top: 10px;
+  padding-top: 15px;
   position: absolute;
   z-index: 1;
   width: 100%;
   height: 170px;
-  background-color: #F0F2F2; 
+  background-color: #004066; 
+  gap: 5px;
+
+}
+
+.navResponsiveContainer ul{
+  width: fit-content;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .header-container {
@@ -320,6 +330,14 @@ body {
   color: black;  
 }
 
+.link-item-r{
+  text-decoration: none;
+  background-color: #004066;
+  color: white;
+  padding: 3px;
+  margin: 3px;
+  border: 2px solid white;
+}
 
 
 .fa-bars {
