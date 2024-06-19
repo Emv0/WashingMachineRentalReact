@@ -1,14 +1,39 @@
-import React, { useState } from 'react'
-import {Offcanvas } from 'react-bootstrap'
+import axios from 'axios';
+import React, { useEffect, useState } from 'react'
+import { Offcanvas } from 'react-bootstrap'
 
 export default function SideBar() {
+    const url = "http://localhost:8000/";
     const [show, setShow] = useState(false);
-
     const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+    const user = JSON.parse(sessionStorage.getItem("user"));
+
+    useEffect(() => {
+        const dataConsult = async () => {
+            try {
+                const response = await axios.get(`${url}userMachineConsult/${user.id}`)
+                console.log(response.data)
+            } catch (error) {
+                console.log(error)
+            }
+        }
+
+        dataConsult();
+    }, [user])
+
+    const consultMachine = async () => {
+        setShow(true)
+        try {
+            const response = axios.get(`${url}userMachineConsult`);
+            console.log("consulta exitosa", response);
+        } catch (error) {
+            console.log("error", error);
+        }
+    }
+
     return (
         <>
-                <i onClick={handleShow} class="fa-solid fa-bars" style={{ color: "#3cbfe9", cursor :"pointer"}}></i>
+            <i onClick={consultMachine} class="fa-solid fa-bars" style={{ color: "#3cbfe9", cursor: "pointer" }}></i>
             <Offcanvas show={show} onHide={handleClose}>
                 <Offcanvas.Header closeButton>
                     <Offcanvas.Title>Tus lavadoras</Offcanvas.Title>

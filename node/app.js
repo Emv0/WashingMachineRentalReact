@@ -3,6 +3,7 @@ import cors  from "cors";
 import db from "./database/db.js";
 import userRouter from "./routes/UsersRoutes.js";
 import machinesRouter from "./routes/MachinesRoutes.js";
+import userMachineRouter from "./routes/User_machineRoutes.js";
 
 const app = express();
 
@@ -10,6 +11,7 @@ app.use( cors() );
 app.use( express.json() );
 app.use( '/' , userRouter );
 app.use( '/', machinesRouter  );
+app.use( '/', userMachineRouter );
 
 
 try {

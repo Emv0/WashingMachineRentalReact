@@ -1,7 +1,7 @@
 import db from "../database/db.js";
 import { DataTypes } from "sequelize";
 
-const machines = db.define( 'machines' ,{
+const machines = db.define('machines', {
 
     codigo: DataTypes.STRING,
     cantidad: DataTypes.INTEGER,
